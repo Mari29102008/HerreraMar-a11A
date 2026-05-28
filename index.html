@@ -1,0 +1,161 @@
++<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora María Herrera</title>
+
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            font-family: Ariel, sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: #000; 
+            color: white;
+        }
+        
+        /* --- 1. AQUÍ VAN LAS INSTRUCCIONES DE LA CLASE .semana --- */
+        .semana {
+            background-color: #1a1a1a;
+            border: 2px solid #bc13fe;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto; /* Centra la tarjeta */
+            max-width: 800px;  /* Para que no sea demasiado ancha */
+            text-align: left;  /* El texto de la tarea a la izquierda */
+            box-shadow: 0 5px 15px rgba(188, 19, 254, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .semana:hover {
+            transform: translateY(-5px); /* Pequeño salto al pasar el mouse */
+        }
+
+        .semana h2 {
+            color: #bc13fe;
+            margin-top: 0;
+        }
+        h1 {
+            color: #fff;
+            padding: 20px;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #bc13fe, 0 0 40px #bc13fe;
+        }
+        header{
+            padding: 20px;
+            background-color: aqua;
+border-bottom: 2px solid #e5dae9; /* Una línea morada para combinar */
+    }
+    
+    /* EL TÍTULO NEÓN */
+    h1 {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        /* Capas de sombra para el efecto de brillo */
+        text-shadow: 
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #1389fe,
+            0 0 82px #1313fe,
+            0 0 92px #1f13fe,
+            0 0 102px #1365fe,
+            0 0 151px #135dfe;
+    }
+        main{
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .semana {
+            background-color: #1a1a1a;
+            border: 2px solid #bc13fe;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 40px auto; 
+            max-width: 900px;
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(188, 19, 254, 0.3);
+        }
+
+        .semana h2 {
+            color: #bc13fe;
+            margin-top: 0;
+        }
+
+        /* --- ESTO ARREGLA LA VISUALIZACIÓN DEL PDF --- */
+        .pdf-container {
+            width: 100%;
+            height: 600px; /* Ajusta esta altura según prefieras */
+            margin-top: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 1px solid rgb(147, 243, 225);
+            background-color: rgb(112, 239, 239);
+            color: #00e5ff;
+        }
+        /* --- NUEVO CÓDIGO PARA EL ZOOM --- */
+        footer img {
+            transition: transform 0.3s ease; 
+        }
+        footer img:hover {
+            transform: scale(1.1); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+<h1>Bitacora segunda y Tercera unidad</h1>
+    </header>
+    <main>
+        section class="semana">
+            <h2>Semana 1</h2>
+            <p>Introducción a los conceptos básicos de Arduino y electrónica.</p>
+            <div class="pdf-container"> 
+                <embed src="Recursos/pdf/Introducción Arduino (3).pdf" type="application/pdf" width="100%" height="100%">
+            </div>
+        </section>
+
+        <section class="semana">
+            <h2>Semana 2</h2>
+            <p>Simulación de circuito LED RGB y lógica de programación.</p>
+            
+            <video controls class="video-ajustado">
+                <source src="RGB final María Reneé Herrera 11A.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+            <section
+            
+        <section class="semana">
+            <h2>Semana 3</h2>
+            <p>Documentación técnica y ejercicios prácticos de la tercera unidad.</p>
+            <div class="pdf-container">
+                <embed src="archivo_semana3.pdf" type="application/pdf" width="100%" height="100%">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>@mari.dreamer</span>
+            <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="75" width="300">
+    </footer>
+    
+</body>
+</html>
